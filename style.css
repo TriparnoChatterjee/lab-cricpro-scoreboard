@@ -1,16 +1,112 @@
 /* Type your code here */
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
 
+.pop-up{
+	display: none;
+	position: absolute;
+	left: 20rem;
+	top: 6rem;
+}
+.pop_up__vis{
+	display: block;
+	position: absolute;
+	left: 20rem;
+	top: 10rem;
+	z-index: 10;
 
+}
+.pop-up img{
+	height: 13rem;
+	width: 21rem;
+}
+#backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 10;
+  pointer-events: none;
+  display: none;
+}
+#backdrop.visible {
+  display: block;
+  pointer-events: all;
+}
+body {
+  background: url("./assets/background-image1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.logo-head {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.main-head {
+  font-family: "Lato", sans-serif;
+  margin-left: 2rem;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.main-tag {
+  font-family: "Lato", sans-serif;
+  margin-left: 2rem;
+  color: grey;
+  font-size: 1.5rem;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+#pop-up{
+	cursor: pointer;
+}
+#last p{
+	display: inline;
+}
+table,
+th,
+td {
+  /* border: 0px solid black; */
+  /* text-decoration: none; */
+  margin-top: 4rem;
+  border-collapse: collapse;
+  font-size: small;
+  background-color: white;
+  padding: 5px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+table{
+	margin-right: 1rem;
+}
+tr{
+	border-radius: 2px;
+}
+#player{
+	color: blue;
+	cursor: pointer;
+}
+caption {
+  background-color: #f05136;
+  padding: 10px;
+  color: white;
+}
 /* change the font family and spacing as per your project font */
-.footer{
-    display:flex;
-    flex-direction: row;
-    align-content: flex-end;
-	position: relative;
-	top: 750px;
-	margin-left: 80px;
-	font-size: 18px;
-	font-family: Nunito Sans;
-    font-style: normal;
-    
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  position: relative;
+  top: 750px;
+  margin-left: 80px;
+  font-size: 18px;
+  font-family: Nunito Sans;
+  font-style: normal;
 }
